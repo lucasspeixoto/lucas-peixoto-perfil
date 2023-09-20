@@ -1,13 +1,13 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Lucas Peixoto",
-	description: "Make beautiful websites regardless of your design experience.",
-	navItems: [
-		{
-			label: "Apresentação",
-			href: "/",
-		},
+  name: "Lucas Peixoto",
+  description: "Meu perfil pessoal online com informações de meu currículo",
+  navItems: [
+    {
+      label: "Apresentação",
+      href: "/",
+    },
     {
       label: "Experiências",
       href: "/xps",
@@ -16,12 +16,12 @@ export const siteConfig = {
       label: "Habilidades",
       href: "/skills",
     },
-	],
-	navMenuItems: [
-		{
-			label: "Apresentação",
-			href: "/",
-		},
+  ],
+  navMenuItems: [
+    {
+      label: "Apresentação",
+      href: "/",
+    },
     {
       label: "Experiências",
       href: "/xps",
@@ -30,11 +30,11 @@ export const siteConfig = {
       label: "Habilidades",
       href: "/skills",
     },
-	],
-	links: {
-		linkedin: "https://www.linkedin.com/in/lucassacramoni/",
-		github: "https://github.com/lucasspeixoto",
-		facebook: "https://www.facebook.com/lspeixotof/",
-		medium: "https://medium.com/@lspeixotodev",
-	},
+  ],
+  links: {
+    linkedin: "https://www.linkedin.com/in/lucassacramoni/",
+    github: "https://github.com/lucasspeixoto",
+    facebook: "https://www.facebook.com/lspeixotof/",
+    medium: "https://medium.com/@lspeixotodev",
+  },
 };
