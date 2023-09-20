@@ -1,69 +1,40 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
+	name: "Lucas Peixoto",
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
 		{
-			label: "Home",
+			label: "Apresentação",
 			href: "/",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Experiências",
+      href: "/xps",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Habilidades",
+      href: "/skills",
     },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Apresentação",
+			href: "/",
 		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+    {
+      label: "Experiências",
+      href: "/xps",
+    },
+    {
+      label: "Habilidades",
+      href: "/skills",
+    },
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+		linkedin: "https://www.linkedin.com/in/lucassacramoni/",
+		github: "https://github.com/lucasspeixoto",
+		facebook: "https://www.facebook.com/lspeixotof/",
+		medium: "https://medium.com/@lspeixotodev",
 	},
 };
