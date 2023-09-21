@@ -1,4 +1,4 @@
-import Image from "@/components/image";
+import Image from "@/components/Image";
 import React from "react";
 
 const programmingLanguages = {

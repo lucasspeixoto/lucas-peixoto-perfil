@@ -1,5 +1,6 @@
-import Image from "./image";
-import Link from "./link";
+import Image from "./Image";
+import Link from "./Link";
+
 interface CardProps {
   title: string;
   description: string;
