@@ -1,5 +1,4 @@
 import Image from "@/components/Image";
-import { title } from "@/components/primitives";
 import React from "react";
 
 const programmingLanguages = {

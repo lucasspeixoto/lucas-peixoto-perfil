@@ -83,24 +83,24 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-blue-700 dark:text-blue-300" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="Linkedin"
           >
-            <LinkedinIcon className="text-default-500" />
+            <LinkedinIcon className="text-blue-700 dark:text-blue-300" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.facebook}
             aria-label="Facebook"
           >
-            <FacebookIcon className="text-default-500" />
+            <FacebookIcon className="text-blue-700 dark:text-blue-300" />
           </Link>
           <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-            <MediumIcon className="text-default-500" />
+            <MediumIcon className="text-blue-700 dark:text-blue-300" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -109,16 +109,16 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-1" justify="end">
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-default-500" />
+          <GithubIcon className="text-blue-700 dark:text-blue-300" />
         </Link>
         <Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-          <LinkedinIcon className="text-default-500" />
+          <LinkedinIcon className="text-blue-700 dark:text-blue-300" />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Facebook">
-          <FacebookIcon className="text-default-500" />
+          <FacebookIcon className="text-blue-700 dark:text-blue-300" />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-          <MediumIcon className="text-default-500" />
+          <MediumIcon className="text-blue-700 dark:text-blue-300" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
