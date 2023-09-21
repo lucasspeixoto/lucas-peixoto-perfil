@@ -6,7 +6,7 @@ const programmingLanguages = {
   title: "Linguages de programação",
   items: [
     { name: "Javascript", logo: "javascript.png" },
-    { name: "Typecript", logo: "typescript.png" },
+    { name: "Typescript", logo: "typescript.png" },
     { name: "Java", logo: "java.png" },
     { name: "Python", logo: "python.png" },
   ],
