@@ -5,16 +5,16 @@ export const siteConfig = {
   description: "Meu perfil pessoal online com informações de meu currículo",
   navItems: [
     {
-      label: "Apresentação",
-      href: "/",
-    },
-    {
       label: "Experiências",
       href: "/xps",
     },
     {
       label: "Habilidades",
       href: "/skills",
+    },
+    {
+      label: "Artigos",
+      href: "/articles",
     },
   ],
   navMenuItems: [
@@ -29,6 +29,10 @@ export const siteConfig = {
     {
       label: "Habilidades",
       href: "/skills",
+    },
+    {
+      label: "Artigos",
+      href: "/articles",
     },
   ],
   links: {

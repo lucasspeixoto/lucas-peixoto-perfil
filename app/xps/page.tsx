@@ -61,50 +61,54 @@ export default function XpsPage() {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {experiences.title}
           </h1>
           <p className="text-lg leading-7 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
             {experiences.subtitle}
           </p>
         </div>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          <>
-            {React.Children.toArray(
-              experiences.items.map((experience) => (
-                <li className="py-12">
-                  <article>
-                    <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                      {experience.date}
-                      <div className="space-y-5 xl:col-span-3">
-                        <div className="space-y-6">
-                          <div>
-                            <div className="leading-8">
-                              <Link
-                                href={`/blog/ada`}
-                                className="text-gray-900 dark:text-gray-100"
-                              >
-                                <span className="text-2xl font-bold ">
-                                  {experience.job}
-                                </span>
-                              </Link>
+        <div className="container py-12">
+          <div className="-m-4 flex flex-wrap">
+            <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+              <>
+                {React.Children.toArray(
+                  experiences.items.map((experience) => (
+                    <li className="py-12">
+                      <>
+                        <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                          {experience.date}
+                          <div className="space-y-5 xl:col-span-3">
+                            <div className="space-y-6">
+                              <div>
+                                <div className="leading-8">
+                                  <Link
+                                    href={`/blog/ada`}
+                                    className="text-gray-900 dark:text-gray-100"
+                                  >
+                                    <span className="text-2xl font-bold ">
+                                      {experience.job}
+                                    </span>
+                                  </Link>
+                                </div>
+                                <div className="flex flex-wrap font-bold text-pink-500 dark:text-pink-500">
+                                  {experience.company}
+                                </div>
+                              </div>
+                              <div className="prose max-w-none text-white-400 dark:text-white-300">
+                                {experience.description}
+                              </div>
                             </div>
-                            <div className="flex flex-wrap font-bold text-pink-500 dark:text-pink-500">
-                              {experience.company}
-                            </div>
-                          </div>
-                          <div className="prose max-w-none text-white-400 dark:text-white-300">
-                            {experience.description}
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-              ))
-            )}
-          </>
-        </ul>
+                      </>
+                    </li>
+                  ))
+                )}
+              </>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );
