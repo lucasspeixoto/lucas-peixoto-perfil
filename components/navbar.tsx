@@ -55,8 +55,8 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-1 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">Lucas</p>
+            <Logo className="text-cyan-500 dark:text-cyan-300"/>
+            <p className="font-bold text-cyan-500 dark:text-cyan-300">Sobre min</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-2 justify-start ml-2">
@@ -83,24 +83,24 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="text-blue-700 dark:text-blue-300" />
+            <GithubIcon className="dark:text-white text-black" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="Linkedin"
           >
-            <LinkedinIcon className="text-blue-700 dark:text-blue-300" />
+            <LinkedinIcon className="text-sky-600" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.facebook}
             aria-label="Facebook"
           >
-            <FacebookIcon className="text-blue-700 dark:text-blue-300" />
+            <FacebookIcon className="text-blue-700" />
           </Link>
           <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-            <MediumIcon className="text-blue-700 dark:text-blue-300" />
+            <MediumIcon className="dark:text-white text-black" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -109,16 +109,16 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-1" justify="end">
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-blue-700 dark:text-blue-300" />
+          <GithubIcon className="dark:text-white text-black" />
         </Link>
         <Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-          <LinkedinIcon className="text-blue-700 dark:text-blue-300" />
+          <LinkedinIcon className="text-sky-600" />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Facebook">
-          <FacebookIcon className="text-blue-700 dark:text-blue-300" />
+          <FacebookIcon className="text-blue-700" />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-          <MediumIcon className="text-blue-700 dark:text-blue-300" />
+          <MediumIcon className="dark:text-white text-black" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

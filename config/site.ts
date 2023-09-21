@@ -6,15 +6,15 @@ export const siteConfig = {
   navItems: [
     {
       label: "Experiências",
-      href: "/xps",
+      href: "/experiencias",
     },
     {
       label: "Habilidades",
-      href: "/skills",
+      href: "/habilidades",
     },
     {
       label: "Artigos",
-      href: "/articles",
+      href: "/artigos-publicados",
     },
   ],
   navMenuItems: [
@@ -24,15 +24,15 @@ export const siteConfig = {
     },
     {
       label: "Experiências",
-      href: "/xps",
+      href: "/experiencias",
     },
     {
       label: "Habilidades",
-      href: "/skills",
+      href: "/habilidades",
     },
     {
       label: "Artigos",
-      href: "/articles",
+      href: "/artigos-publicados",
     },
   ],
   links: {

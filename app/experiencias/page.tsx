@@ -91,7 +91,7 @@ export default function XpsPage() {
                                     </span>
                                   </Link>
                                 </div>
-                                <div className="flex flex-wrap font-bold text-pink-500 dark:text-pink-500">
+                                <div className="flex flex-wrap font-bold text-cyan-500 dark:text-cyan-300">
                                   {experience.company}
                                 </div>
                               </div>
