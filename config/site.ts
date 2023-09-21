@@ -14,7 +14,7 @@ export const siteConfig = {
     },
     {
       label: "Artigos",
-      href: "/artigos-publicados",
+      href: "/artigos-e-apresentacoes",
     },
   ],
   navMenuItems: [
@@ -32,7 +32,7 @@ export const siteConfig = {
     },
     {
       label: "Artigos",
-      href: "/artigos-publicados",
+      href: "/artigos-e-apresentacoes",
     },
   ],
   links: {

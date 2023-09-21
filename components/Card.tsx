@@ -54,7 +54,7 @@ const Card: React.FC<CardProps> = ({ title, description, imgSrc, href }) => (
             className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            Ver mais &rarr;
+            Ver &rarr;
           </Link>
         )}
       </div>
