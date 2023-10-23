@@ -7,11 +7,11 @@ const experiences = {
   items: [
     {
       key: "1",
-      date: "Jun 2022 - Presente",
+      date: "Ago 2023 - Presente",
       job: "Desenvolvedor de software Senior",
       company: "IBM",
       description:
-        "Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Atuo também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira.",
+        "Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Além das atividades como desenvolvedor, atuo no processo de criação de padrões e tomadas de decisão com relação a novas implementações que serão replicadas em outros projetos, assim como mudanças de arquitetura. Atuo também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira.",
     },
     {
       key: "2",
@@ -19,7 +19,7 @@ const experiences = {
       job: "Desenvolvedor de software",
       company: "IBM",
       description:
-        "Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Atuo também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira.",
+        "Atuação como desenvolvedor web, onde trabalho com Angular, NgRx e microfrontend. Atuei também na gestão técnica dos projetos desenvolvidos e na mentoria de desenvolvedores/estagiários em início de carreira.",
     },
     {
       key: "3",
