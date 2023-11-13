@@ -22,6 +22,18 @@ const frameworks = {
   ],
 };
 
+
+const tools = {
+  title: "Outras ferramentas",
+  items: [
+    { name: "Tailwind Css", logo: "tailwind.png" },
+    { name: "React Query", logo: "react-query.png" },
+    { name: "Zustand", logo: "zustand.png" },
+    { name: "NgRx", logo: "ngrx.png" },
+    { name: "Styled Components", logo: "styled-components.png" },
+  ],
+};
+
 export default function SkillsPage() {
   return (
     <>
@@ -31,7 +43,7 @@ export default function SkillsPage() {
             Competências Técnicas
           </h1>
           <p className="text-base sm:text-lg md:text-xl leading-7 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-            Linguages de programação e ferramentas
+            Ferramentas que tenho experiência
           </p>
         </div>
         <div className="container gap-24 pt-12">
@@ -46,9 +58,9 @@ export default function SkillsPage() {
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
-                        width={120}
-                        height={120}
-                        className="h-24 w-24 rounded-full"
+                        width={80}
+                        height={80}
+                        className="h-16 w-auto rounded-full"
                       />
                       <span>{item.name}</span>
                     </div>
@@ -69,9 +81,32 @@ export default function SkillsPage() {
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
-                        width={120}
-                        height={120}
-                        className="h-24 w-24"
+                        width={100}
+                        height={80}
+                        className="h-16 w-auto"
+                      />
+                      <span>{item.name}</span>
+                    </div>
+                  ))
+                )}
+              </>
+            </div>
+          </div>
+
+           {/* Ferramentas */}
+           <div className="mb-16">
+            <h3 className="text-base sm:text-xl md:text-2xl leading-7">{tools.title}</h3>
+            <div className="flex items-center justify-center flex-wrap gap-x-36 gap-y-24 mt-6">
+              <>
+                {React.Children.toArray(
+                  tools.items.map((item) => (
+                    <div className="flex flex-col flex-wrap items-center gap-2">
+                      <Image
+                        src={`/static/images/${item.logo}`}
+                        alt="avatar"
+                        width={100}
+                        height={80}
+                        className="h-16 w-auto"
                       />
                       <span>{item.name}</span>
                     </div>
