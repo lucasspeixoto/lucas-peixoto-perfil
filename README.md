@@ -1,40 +1,57 @@
-# Next.js & NextUI Template
+<h1 align="center">
+   Perfil pessoal - Lucas
+</h1>
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+<br>
 
-## Technologies Used
+## 💻 Repositório
 
-- [Next.js 13](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+[Meu Perfil](https://lucas-peixoto-perfil.vercel.app/) é um projeto de página
+com informações ao meu respeito assim como minha carreira como desenvolvedor
+de software.
 
-## How to Use
+## ✨ Tecnologias
 
+O projeto Foi desenvolvido com as seguintes tecnologias:
 
-### Use the template with create-next-app
+- [NextJs](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TailwindCss](https://tailwindcss.com/)
+- [NextUI](https://nextui.org/)
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## 🔖 Layout
+
+<!-- ![caption](src/assets/presentation.gif) -->
+
+![interface](public/layout.png 'Layout Atual')
+
+![interface](public/layout2.png 'Layout Atual')
+
+![interface](public/layout3.png 'Layout Atual')
+
+![interface](public/layout4.png 'Layout Atual')
+
+## 🚀 Instalação
 
 ```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
+# Clone o repositório e entre na pasta do projeto
+$ git clone https://github.com/lucasspeixoto/lucas-peixoto-perfil && cd lucas-peixoto-perfil
+
+# Instale as dependências
+$ npm install
+# ou
+$ yarn install
+
+# Execute a aplicação
+$ npm start
+# ou
+$ yarn start
+
+# Abra http://localhost:3000 no seu navegador para ver a aplicação rodando!
 ```
 
-### Install dependencies
+## 📝 Licença
 
-```bash
-npm install
-```
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://opensource.org/licenses/MIT) para obter mais detalhes.
 
-### Run the development server
-
-```bash
-npm run dev
-```
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+---

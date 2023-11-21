@@ -48,7 +48,7 @@ export default function RootLayout({
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
+                href="https://nextui-docs-v2.vercel.app?utm_source=lucas-peixoto-perfil"
                 title="nextui.org homepage"
               >
                 <span className="text-default-600">Desenvolvido com</span>
