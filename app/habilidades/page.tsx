@@ -50,11 +50,11 @@ export default function SkillsPage() {
           {/* Linguagens de programação */}
           <div className="mb-16 ">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{programmingLanguages.title}</h3>
-            <div className="flex items-center justify-between flex-wrap gap-x-auto gap-y-24 mt-6">
+            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
               <>
                 {React.Children.toArray(
                   programmingLanguages.items.map((item) => (
-                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-2 hover:cursor-pointer">
+                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-0 hover:cursor-pointer">
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
@@ -73,11 +73,11 @@ export default function SkillsPage() {
           {/* Frameworks */}
           <div className="mb-16">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{frameworks.title}</h3>
-            <div className="flex items-center justify-between flex-wrap gap-x-auto gap-y-24 mt-6">
+            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
               <>
                 {React.Children.toArray(
                   frameworks.items.map((item) => (
-                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-2 hover:cursor-pointer">
+                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-0 hover:cursor-pointer">
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
@@ -96,11 +96,11 @@ export default function SkillsPage() {
            {/* Ferramentas */}
            <div className="mb-16">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{tools.title}</h3>
-            <div className="flex items-center justify-between flex-wrap gap-x-auto gap-y-24 mt-6">
+            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
               <>
                 {React.Children.toArray(
                   tools.items.map((item) => (
-                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-2 hover:cursor-pointer">
+                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-0 hover:cursor-pointer">
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
