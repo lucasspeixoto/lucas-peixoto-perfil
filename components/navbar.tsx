@@ -28,6 +28,7 @@ import {
 
 import { Logo } from "@/components/icons";
 import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export const Navbar = () => {
   const searchInput = (
@@ -103,6 +104,7 @@ export const Navbar = () => {
             <MediumIcon className="dark:text-white text-black" />
           </Link>
           <ThemeSwitch />
+          {/* <LanguageSwitcher /> */}
         </NavbarItem>
         {/* <NavbarItem className="hidden sm:flex">{searchInput}</NavbarItem> */}
       </NavbarContent>
@@ -122,6 +124,7 @@ export const Navbar = () => {
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
+        {/* <LanguageSwitcher /> */}
       </NavbarContent>
 
       <NavbarMenu>
