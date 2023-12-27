@@ -2,6 +2,13 @@ import Card from "@/components/Card";
 
 const projectsData = [
   {
+    title: "Testes unitários com Next JS, React Hook Form, Jest e Testing Library",
+    description: `Apresentação de exemplos práticos de testes unitários para formulários 
+    em React com uso de react-hook-form, zod, jest e react testing library.`,
+    imgSrc: "/static/images/next-1.png",
+    href: "https://medium.com/@lspeixotodev/testes-unit%C3%A1rios-com-next-js-react-hook-form-jest-e-testing-library-a8081afa8103",
+  },
+  {
     title: "Fluxo de dados via rota no Angular",
     description: `Breve apresentação das possibilidades de trafegar informações via rota
     no angular`,
