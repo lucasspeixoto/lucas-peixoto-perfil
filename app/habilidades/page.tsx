@@ -54,15 +54,15 @@ export default function SkillsPage() {
               <>
                 {React.Children.toArray(
                   programmingLanguages.items.map((item) => (
-                    <div className="flex flex-col flex-wrap items-center gap-2">
+                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-0 hover:cursor-pointer">
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
                         width={80}
                         height={80}
-                        className="h-16 w-auto rounded-full"
+                        className="h-16 w-auto rounded-full "
                       />
-                      <span>{item.name}</span>
+                      <span className="font-semibold hover:font-bold select-none">{item.name}</span>
                     </div>
                   ))
                 )}
@@ -73,11 +73,11 @@ export default function SkillsPage() {
           {/* Frameworks */}
           <div className="mb-16">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{frameworks.title}</h3>
-            <div className="flex items-center justify-center flex-wrap gap-x-36 gap-y-24 mt-6">
+            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
               <>
                 {React.Children.toArray(
                   frameworks.items.map((item) => (
-                    <div className="flex flex-col flex-wrap items-center gap-2">
+                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-0 hover:cursor-pointer">
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
@@ -85,7 +85,7 @@ export default function SkillsPage() {
                         height={80}
                         className="h-16 w-auto"
                       />
-                      <span>{item.name}</span>
+                      <span className="font-semibold hover:font-bold select-none">{item.name}</span>
                     </div>
                   ))
                 )}
@@ -96,11 +96,11 @@ export default function SkillsPage() {
            {/* Ferramentas */}
            <div className="mb-16">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{tools.title}</h3>
-            <div className="flex items-center justify-center flex-wrap gap-x-36 gap-y-24 mt-6">
+            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
               <>
                 {React.Children.toArray(
                   tools.items.map((item) => (
-                    <div className="flex flex-col flex-wrap items-center gap-2">
+                    <div className="flex w-28 flex-col flex-wrap scale-90 hover:scale-100 items-center gap-0 hover:cursor-pointer">
                       <Image
                         src={`/static/images/${item.logo}`}
                         alt="avatar"
@@ -108,7 +108,7 @@ export default function SkillsPage() {
                         height={80}
                         className="h-16 w-auto"
                       />
-                      <span>{item.name}</span>
+                      <span className="font-semibold hover:font-bold select-none">{item.name}</span>
                     </div>
                   ))
                 )}
