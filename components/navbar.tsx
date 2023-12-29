@@ -24,11 +24,10 @@ import {
   LinkedinIcon,
   FacebookIcon,
   MediumIcon,
+  WhatsappIcon,
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
-import Image from "next/image";
-import LanguageSwitcher from "./LanguageSwitcher";
+import { FaWhatsapp } from "react-icons/fa6";
 
 export const Navbar = () => {
   const searchInput = (
@@ -57,7 +56,9 @@ export const Navbar = () => {
       <NavbarContent className=" basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-1 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="hidden sm:block font-bold text-cyan-500 dark:text-cyan-300">Sobre min</p>
+            <p className="hidden sm:block font-bold text-cyan-500 dark:text-cyan-300">
+              Sobre min
+            </p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden sm:flex gap-2 justify-start ml-2">
@@ -83,6 +84,14 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-6">
+          <Link
+            isExternal
+            href={siteConfig.links.whatsapp}
+            aria-label="Whatsapp"
+          >
+            <FaWhatsapp size={24} color="green" />
+          </Link>
+
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
             <GithubIcon className="dark:text-white text-black" />
           </Link>
@@ -110,6 +119,9 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="gap-2 sm:hidden basis-1 pl-1" justify="end">
+        <Link isExternal href={siteConfig.links.whatsapp} aria-label="Whatsapp">
+        <FaWhatsapp size={24} color="green" />
+        </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
           <GithubIcon size={18} className="dark:text-white text-black" />
         </Link>
