@@ -24,33 +24,11 @@ import {
   LinkedinIcon,
   FacebookIcon,
   MediumIcon,
-  WhatsappIcon,
 } from "@/components/icons";
 
 import { FaWhatsapp } from "react-icons/fa6";
 
 export const Navbar = () => {
-  const searchInput = (
-    <Input
-      aria-label="Pesquisar"
-      classNames={{
-        inputWrapper: "bg-default-100",
-        input: "text-sm",
-      }}
-      endContent={
-        <Kbd className="hidden md:inline-block" keys={["command"]}>
-          K
-        </Kbd>
-      }
-      labelPlacement="outside"
-      placeholder="Pesquisar..."
-      startContent={
-        <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
-      }
-      type="search"
-    />
-  );
-
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className=" basis-1/5 sm:basis-full" justify="start">
@@ -89,28 +67,28 @@ export const Navbar = () => {
             href={siteConfig.links.whatsapp}
             aria-label="Whatsapp"
           >
-            <FaWhatsapp size={24} color="green" />
+            <FaWhatsapp size={24} color="#858585" />
           </Link>
 
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="dark:text-white text-black" />
+            <GithubIcon className="text-[#858585]" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="Linkedin"
           >
-            <LinkedinIcon className="text-sky-600" />
+            <LinkedinIcon className="text-[#858585]" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.facebook}
             aria-label="Facebook"
           >
-            <FacebookIcon className="text-blue-700" />
+            <FacebookIcon className="text-[#858585]" />
           </Link>
           <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-            <MediumIcon className="dark:text-white text-black" />
+            <MediumIcon className="text-[#858585]" />
           </Link>
           <ThemeSwitch />
           {/* <LanguageSwitcher /> */}
@@ -120,19 +98,19 @@ export const Navbar = () => {
 
       <NavbarContent className="gap-2 sm:hidden basis-1 pl-1" justify="end">
         <Link isExternal href={siteConfig.links.whatsapp} aria-label="Whatsapp">
-        <FaWhatsapp size={24} color="green" />
+        <FaWhatsapp size={24} className="text-[#858585]" />
         </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon size={18} className="dark:text-white text-black" />
+          <GithubIcon size={18} className="text-[#858585]" />
         </Link>
         <Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-          <LinkedinIcon size={18} className="text-sky-600" />
+          <LinkedinIcon size={18} className="text-[#858585]" />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Facebook">
-          <FacebookIcon size={18} className="text-blue-700" />
+          <FacebookIcon size={18} className="text-[#858585]" />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-          <MediumIcon size={18} className="dark:text-white text-black" />
+          <MediumIcon size={18} className="text-[#858585]" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

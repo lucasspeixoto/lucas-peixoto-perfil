@@ -2,6 +2,12 @@ import Card from "@/components/Card";
 
 const projectsData = [
   {
+    title: "Responsividade: Estratégias Eficientes para Detectar Larguras de Janela em Aplicações React",
+    description: `Apresentação de um Hook customizado e performático para determinação se certa largura de janela foi atingida.`,
+    imgSrc: "/static/images/next-2.png",
+    href: "https://medium.com/@lspeixotodev/responsividade-estrat%C3%A9gias-eficientes-para-detectar-larguras-de-janela-em-aplica%C3%A7%C3%B5es-react-1a59cddf9dd3",
+  },
+  {
     title: "Testes unitários com Next JS, React Hook Form, Jest e Testing Library",
     description: `Apresentação de exemplos práticos de testes unitários para formulários 
     em React com uso de react-hook-form, zod, jest e react testing library.`,
