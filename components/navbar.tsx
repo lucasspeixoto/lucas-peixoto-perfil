@@ -62,14 +62,6 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-6">
-          <Link
-            isExternal
-            href={siteConfig.links.whatsapp}
-            aria-label="Whatsapp"
-          >
-            <FaWhatsapp size={24} color="#858585" />
-          </Link>
-
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
             <GithubIcon className="text-[#858585]" />
           </Link>
@@ -91,15 +83,10 @@ export const Navbar = () => {
             <MediumIcon className="text-[#858585]" />
           </Link>
           <ThemeSwitch />
-          {/* <LanguageSwitcher /> */}
         </NavbarItem>
-        {/* <NavbarItem className="hidden sm:flex">{searchInput}</NavbarItem> */}
       </NavbarContent>
 
       <NavbarContent className="gap-2 sm:hidden basis-1 pl-1" justify="end">
-        <Link isExternal href={siteConfig.links.whatsapp} aria-label="Whatsapp">
-        <FaWhatsapp size={24} className="text-[#858585]" />
-        </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
           <GithubIcon size={18} className="text-[#858585]" />
         </Link>
