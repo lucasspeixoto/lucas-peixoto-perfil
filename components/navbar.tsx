@@ -35,7 +35,7 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-1 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <p className="hidden sm:block font-bold text-cyan-500 dark:text-cyan-300">
-              Sobre min
+              Sobre mim
             </p>
           </NextLink>
         </NavbarBrand>
