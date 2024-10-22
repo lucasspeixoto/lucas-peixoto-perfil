@@ -50,7 +50,7 @@ export default function SkillsPage() {
           {/* Linguagens de programação */}
           <div className="mb-16 ">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{programmingLanguages.title}</h3>
-            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
+            <div className="flex items-center justify-start flex-wrap gap-4 mt-6">
               <>
                 {React.Children.toArray(
                   programmingLanguages.items.map((item) => (
@@ -60,7 +60,7 @@ export default function SkillsPage() {
                         alt="avatar"
                         width={80}
                         height={80}
-                        className="h-16 w-auto rounded-full "
+                        className="h-16 w-auto rounded-full"
                       />
                       <span className="font-semibold hover:font-bold select-none">{item.name}</span>
                     </div>
@@ -73,7 +73,7 @@ export default function SkillsPage() {
           {/* Frameworks */}
           <div className="mb-16">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{frameworks.title}</h3>
-            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
+            <div className="flex items-center justify-start flex-wrap gap-4 mt-6">
               <>
                 {React.Children.toArray(
                   frameworks.items.map((item) => (
@@ -96,7 +96,7 @@ export default function SkillsPage() {
            {/* Ferramentas */}
            <div className="mb-16">
             <h3 className="text-base sm:text-xl md:text-2xl leading-7">{tools.title}</h3>
-            <div className="flex items-center justify-center flex-wrap gap-x-48 gap-y-24 mt-6">
+            <div className="flex items-center justify-start flex-wrap gap-4 mt-6">
               <>
                 {React.Children.toArray(
                   tools.items.map((item) => (

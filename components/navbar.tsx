@@ -7,9 +7,7 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
@@ -18,23 +16,16 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  GithubIcon,
-  SearchIcon,
-  LinkedinIcon,
-  FacebookIcon,
-  MediumIcon,
-} from "@/components/icons";
 
-import { FaWhatsapp } from "react-icons/fa6";
+import Image from "./Image";
 
 export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
-      <NavbarContent className=" basis-1/5 sm:basis-full" justify="start">
+      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-1 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="hidden sm:block font-bold text-cyan-500 dark:text-cyan-300">
+            <p className="hover:underline hidden sm:block font-bold text-primary">
               Sobre mim
             </p>
           </NextLink>
@@ -45,7 +36,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium hover:underline"
                 )}
                 color="foreground"
                 href={item.href}
@@ -61,51 +52,86 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-6">
+        <NavbarItem className="hidden sm:flex gap-4">
+          <Link isExternal href={siteConfig.links.youtube} aria-label="Youtube">
+            <Image
+              src={`/static/images/youtube.png`}
+              alt="Youtube Link"
+              width={25}
+              height={25}
+            />
+          </Link>
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="text-[#858585]" />
+            <Image
+              src={`/static/images/github.png`}
+              alt="Github Link"
+              width={25}
+              height={25}
+            />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="Linkedin"
           >
-            <LinkedinIcon className="text-[#858585]" />
+            <Image
+              src={`/static/images/linkedin.png`}
+              alt="Linkedin Link"
+              width={25}
+              height={25}
+            />
           </Link>
-          <Link
-            isExternal
-            href={siteConfig.links.facebook}
-            aria-label="Facebook"
-          >
-            <FacebookIcon className="text-[#858585]" />
-          </Link>
+
           <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-            <MediumIcon className="text-[#858585]" />
+            <Image
+              src={`/static/images/medium.png`}
+              alt="Medium Link"
+              width={25}
+              height={25}
+            />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="gap-2 sm:hidden basis-1 pl-1" justify="end">
+        <Link isExternal href={siteConfig.links.youtube} aria-label="Youtube">
+          <Image
+            src={`/static/images/youtube.png`}
+            alt="Youtube Link"
+            width={18}
+            height={18}
+          />
+        </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon size={18} className="text-[#858585]" />
+          <Image
+            src={`/static/images/github.png`}
+            alt="Github Link"
+            width={18}
+            height={18}
+          />
         </Link>
         <Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-          <LinkedinIcon size={18} className="text-[#858585]" />
-        </Link>
-        <Link isExternal href={siteConfig.links.facebook} aria-label="Facebook">
-          <FacebookIcon size={18} className="text-[#858585]" />
+          <Image
+            src={`/static/images/linkedin.png`}
+            alt="Linkedin Link"
+            width={18}
+            height={18}
+          />
         </Link>
         <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
-          <MediumIcon size={18} className="text-[#858585]" />
+          <Image
+            src={`/static/images/medium.png`}
+            alt="Medium Link"
+            width={18}
+            height={18}
+          />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
-        {/* <LanguageSwitcher /> */}
       </NavbarContent>
 
       <NavbarMenu>
-        {/* {searchInput} */}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
