@@ -48,7 +48,7 @@ export default function Home() {
               em Spring Boot, Microserviços e mensageria.
             </p>
             <p className="mb-4 text-lg">
-             Além de sigo conduzingo o projeto do meu
+             Além disso, estou conduzingo o projeto de
               <a className="text-red-500 font-semibold hover:underline" target="_blank" href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1" > canal</a> no youtube
               e atuando como mentor de desenvolvedores em inicio de carreira.
             </p>
