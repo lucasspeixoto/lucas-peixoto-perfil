@@ -36,7 +36,7 @@ const tools = {
 export default function SkillsPage() {
   return (
     <>
-        <div className="space-y-2 mt-2 ">
+        <div className="space-y-2">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:leading-14">
             Competências Técnicas
           </h1>
