@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -18,27 +20,33 @@ import clsx from "clsx";
 import { ThemeSwitch } from "@/components/theme-switch";
 
 import Image from "./Image";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-1 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="hover:underline hidden sm:block font-bold text-primary">
-              Sobre mim
-            </p>
+          <NextLink
+            className={`select-none gap-1 hover:underline hidden sm:block text-secondary ${
+              pathname === "/" ? "underline italic font-bold" : "font-medium"
+            }`}
+            href="/"
+          >
+            Sobre mim
           </NextLink>
         </NavbarBrand>
         <ul className="hidden sm:flex gap-2 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium hover:underline"
-                )}
-                color="foreground"
+                className={`select-none gap-1 hover:underline hidden sm:block ${
+                  pathname === item.href ? "underline italic font-bold" : "font-medium"
+                }`}
+
+               
                 href={item.href}
               >
                 {item.label}
