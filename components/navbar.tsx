@@ -45,8 +45,6 @@ export const Navbar = () => {
                 className={`select-none gap-1 hover:underline hidden sm:block ${
                   pathname === item.href ? "underline italic font-bold" : "font-medium"
                 }`}
-
-               
                 href={item.href}
               >
                 {item.label}
@@ -90,7 +88,7 @@ export const Navbar = () => {
             />
           </Link>
 
-          <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
+          <Link isExternal href={siteConfig.links.medium} aria-label="Medium">
             <Image
               src={`/static/images/medium.png`}
               alt="Medium Link"
@@ -127,7 +125,7 @@ export const Navbar = () => {
             height={18}
           />
         </Link>
-        <Link isExternal href={siteConfig.links.facebook} aria-label="Medium">
+        <Link isExternal href={siteConfig.links.medium} aria-label="Medium">
           <Image
             src={`/static/images/medium.png`}
             alt="Medium Link"

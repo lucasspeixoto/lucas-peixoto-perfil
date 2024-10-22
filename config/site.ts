@@ -44,10 +44,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    linkedin: "https://www.linkedin.com/in/lucassacramoni/",
+    linkedin: "https://www.linkedin.com/in/lspeixotodev/",
     github: "https://github.com/lucasspeixoto",
-    facebook: "https://www.facebook.com/lspeixotof/",
     medium: "https://medium.com/@lspeixotodev",
-    youtube: "https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA",
+    youtube: "https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1",
   },
 };
