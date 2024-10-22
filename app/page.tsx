@@ -4,13 +4,13 @@ export default function Home() {
   return (
     <>
       <div className="divide-ydivide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl  font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10  md:leading-14">
+        <div className="space-y-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl  font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10  md:leading-14">
             Sobre mim
           </h1>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center space-x-2 pt-8">
+          <div className="mt-4 flex flex-col items-center">
             <Image
               src="/static/images/avatar-lucas.png"
               alt="avatar"
@@ -18,15 +18,13 @@ export default function Home() {
               height={192}
               className="h-48 w-48 rounded-full"
             />
-            <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
-              Lucas Peixoto
-            </h3>
-            <div className="text-gray-500 dark:text-gray-400">
-              Senior Software Developer
-            </div>
-            <div className="text-gray-500 dark:text-gray-400">IBM</div>
+            <span className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
+              Lucas Peixoto Fernandes
+            </span>
+            <span className="text-secondary text-xl">Senior Software Developer</span>
+            <span className="text-xl text-red-500 dark:text-red-400">Santander</span>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-none dark:prose-invert xl:col-span-2">
             <p className="mb-4 text-lg">
               Formado em Engenharia Agrícola pela Universidade Estadual de
               Campinas (Unicamp), com mestrado em Modelagem Estrutural de Vigas

@@ -14,7 +14,11 @@ export const siteConfig = {
     },
     {
       label: "Artigos",
-      href: "/artigos-e-apresentacoes",
+      href: "/artigos",
+    },
+    {
+      label: "Palestras",
+      href: "/palestras",
     },
     {
       label: "Meu canal",
@@ -36,7 +40,11 @@ export const siteConfig = {
     },
     {
       label: "Artigos",
-      href: "/artigos-e-apresentacoes",
+      href: "/artigos",
+    },
+    {
+      label: "Palestras",
+      href: "/palestras",
     },
     {
       label: "Meu canal",

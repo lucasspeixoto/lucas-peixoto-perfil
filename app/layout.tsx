@@ -13,10 +13,6 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
- /*  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ], */
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -41,14 +37,14 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark", children }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-5xl pt-16 px-6 flex-grow">
+            <main className="container mx-auto max-w-5xl py-2 px-6 flex-grow">
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=lucas-peixoto-perfil"
+                href="https://nextjs.org/"
                 title="nextui.org homepage"
               >
                 <span className="text-default-600">Desenvolvido com</span>
