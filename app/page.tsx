@@ -41,11 +41,12 @@ export default function Home() {
               equipes, com foco em otimização de tempo e redução de mão de obra
               para envio de e-mails, tratamento de dados e RPAs. Durante esta
               experiência como trainee iniciei uma especialização no
-              desenvolvimento web, com foco no frontEnd.
+              desenvolvimento web, com foco no frontend.
             </p>
             <p className="mb-4 text-lg">
               Atualmente sigo me especializando no desenvolvimento Web com foco
-              em Spring Boot, Quarkus e Next Js.
+              em Spring Boot, Microserviços e mensageria além de conduzir o projeto do meu
+              <a className="text-red-500 font-semibold hover:underline" target="_blank" href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1" > canal</a> no youtube
             </p>
             <p className="mb-4 text-lg">
               Além disso, atuo como mentor de desenvolvedores que estão

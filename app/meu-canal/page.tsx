@@ -41,7 +41,7 @@ export default function MyChannelPage() {
             pretendo trazer muito conteúdo educativo com tutoriais práticos
             trazendo diversas situações que ocorrem no dia a dia do programador
             e que não tem vasto conteúdo disponível. Sofri muito nos meus
-            primeiros anos quando precisei de conteúdos mais avançados
+            primeiros anos quando precisei de conteúdos mais avançados.
           </p>
 
           <p className="text-base sm:text-xl md:text-xl leading-7">
