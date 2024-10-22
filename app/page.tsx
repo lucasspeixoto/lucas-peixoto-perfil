@@ -45,12 +45,12 @@ export default function Home() {
             </p>
             <p className="mb-4 text-lg">
               Atualmente sigo me especializando no desenvolvimento Web com foco
-              em Spring Boot, Microserviços e mensageria além de conduzir o projeto do meu
-              <a className="text-red-500 font-semibold hover:underline" target="_blank" href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1" > canal</a> no youtube
+              em Spring Boot, Microserviços e mensageria.
             </p>
             <p className="mb-4 text-lg">
-              Além disso, atuo como mentor de desenvolvedores que estão
-              iniciando a carreira.
+             Além de sigo conduzingo o projeto do meu
+              <a className="text-red-500 font-semibold hover:underline" target="_blank" href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1" > canal</a> no youtube
+              e atuando como mentor de desenvolvedores em inicio de carreira.
             </p>
           </div>
         </div>
