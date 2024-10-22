@@ -28,10 +28,10 @@ export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-1 max-w-fit">
+        <NavbarBrand as="ul" className="divide-x-2 gap-2 max-w-fit ml-2">
           <NextLink
             className={`select-none gap-1 hover:underline hidden sm:block text-secondary ${
-              pathname === "/" ? "underline italic font-bold" : "font-medium"
+              pathname === "/" ? "underline" : ""
             }`}
             href="/"
           >
@@ -42,8 +42,8 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className={`select-none gap-1 hover:underline hidden sm:block ${
-                  pathname === item.href ? "underline italic font-bold" : "font-medium"
+                className={`leading-tight tracking-wider font-medium select-none gap-1 hover:underline hidden sm:block ${
+                  pathname === item.href ? "underline text-primary" : ""
                 }`}
                 href={item.href}
               >

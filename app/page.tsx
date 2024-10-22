@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="divide-ydivide-gray-200 dark:divide-gray-700">
-        <div className="space-y-4">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl  font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10  md:leading-14">
-            Sobre mim
-          </h1>
-        </div>
+      <div className="my-2">
+        <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:leading-14">
+          Sobre mim
+        </span>
+      </div>
+      <div className="container mt-8">
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="mt-4 flex flex-col items-center">
             <Image
@@ -21,8 +21,12 @@ export default function Home() {
             <span className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
               Lucas Peixoto Fernandes
             </span>
-            <span className="text-secondary text-xl">Senior Software Developer</span>
-            <span className="text-xl text-red-500 dark:text-red-400">Santander</span>
+            <span className="text-secondary text-xl">
+              Senior Software Developer
+            </span>
+            <span className="text-xl text-red-500 dark:text-red-400">
+              Santander
+            </span>
           </div>
           <div className="prose max-w-none dark:prose-invert xl:col-span-2">
             <p className="mb-4 text-lg">
