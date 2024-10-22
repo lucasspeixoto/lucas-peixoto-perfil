@@ -9,6 +9,8 @@ import clsx from "clsx";
 
 import Image from "./Image";
 
+import { FaMoon, FaSun } from "react-icons/fa";
+
 export interface ThemeSwitchProps {
   className?: string;
   classNames?: SwitchProps["classNames"];
@@ -43,7 +45,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     <Component
       {...getBaseProps({
         className: clsx(
-          "ml-4 transition-opacity opacity-80 hover:opacity-100 cursor-pointer",
+          "ml-4 transition-opacity opacity-90 hover:opacity-100 cursor-pointer",
           className,
           classNames?.base
         ),
@@ -72,20 +74,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {!isSelected || isSSR ? (
-          
-          <Image
-            src={`/static/images/sun.png`}
-            alt="Sun logo"
-            width={28}
-            height={28}
-          />
+          <FaSun size="20" className="text-yellow-500" />
         ) : (
-          <Image
-            src={`/static/images/moon.png`}
-            alt="Moon logo"
-            width={28}
-            height={28}
-          />
+          <FaMoon size="20" className="text-blue-500" />
         )}
       </div>
     </Component>

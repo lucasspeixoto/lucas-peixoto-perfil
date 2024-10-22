@@ -10,16 +10,11 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
-
-import { link as linkStyles } from "@nextui-org/theme";
-
+import { FaYoutube, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa";
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
-import clsx from "clsx";
-
 import { ThemeSwitch } from "@/components/theme-switch";
-
-import Image from "./Image";
 import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
@@ -60,41 +55,21 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-4">
           <Link isExternal href={siteConfig.links.youtube} aria-label="Youtube">
-            <Image
-              src={`/static/images/youtube.png`}
-              alt="Youtube Link"
-              width={25}
-              height={25}
-            />
+            <FaYoutube size="30" className="text-red-500" />
           </Link>
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <Image
-              src={`/static/images/github.png`}
-              alt="Github Link"
-              width={25}
-              height={25}
-            />
+            <FaGithub size="30" className="text-gray-500" />
           </Link>
           <Link
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="Linkedin"
           >
-            <Image
-              src={`/static/images/linkedin.png`}
-              alt="Linkedin Link"
-              width={25}
-              height={25}
-            />
+            <FaLinkedin size="30" className="text-blue-500" />
           </Link>
 
           <Link isExternal href={siteConfig.links.medium} aria-label="Medium">
-            <Image
-              src={`/static/images/medium.png`}
-              alt="Medium Link"
-              width={25}
-              height={25}
-            />
+            <FaMedium size="30" className="dark:text-white text-black" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -102,36 +77,16 @@ export const Navbar = () => {
 
       <NavbarContent className="gap-2 sm:hidden basis-1 pl-1" justify="end">
         <Link isExternal href={siteConfig.links.youtube} aria-label="Youtube">
-          <Image
-            src={`/static/images/youtube.png`}
-            alt="Youtube Link"
-            width={18}
-            height={18}
-          />
+          <FaYoutube size="20" className="text-red-500" />
         </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <Image
-            src={`/static/images/github.png`}
-            alt="Github Link"
-            width={18}
-            height={18}
-          />
+          <FaGithub size="20" className="text-gray-500" />
         </Link>
         <Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-          <Image
-            src={`/static/images/linkedin.png`}
-            alt="Linkedin Link"
-            width={18}
-            height={18}
-          />
+          <FaLinkedin size="20" className="text-blue-500" />
         </Link>
         <Link isExternal href={siteConfig.links.medium} aria-label="Medium">
-          <Image
-            src={`/static/images/medium.png`}
-            alt="Medium Link"
-            width={18}
-            height={18}
-          />
+          <FaMedium size="20" className="dark:text-white text-black" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

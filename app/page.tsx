@@ -21,10 +21,10 @@ export default function Home() {
             <span className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
               Lucas Peixoto Fernandes
             </span>
-            <span className="text-secondary text-xl">
-              Senior Software Developer
+            <span className="text-xl">
+              Desenvolvedor fullstack
             </span>
-            <span className="text-xl text-red-500 dark:text-red-400">
+            <span className="text-xl">
               Santander
             </span>
           </div>
