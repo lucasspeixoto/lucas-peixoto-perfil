@@ -7,9 +7,8 @@ import { useTheme } from "next-themes";
 import { useIsSSR } from "@react-aria/ssr";
 import clsx from "clsx";
 
-import Image from "./Image";
-
 import { FaMoon, FaSun } from "react-icons/fa";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export interface ThemeSwitchProps {
   className?: string;
@@ -74,9 +73,13 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {!isSelected || isSSR ? (
-          <FaSun size="20" className="text-yellow-500" />
+          <Tooltip showArrow={true} content="Claro">
+            <FaSun size="20" className="text-yellow-500" />
+          </Tooltip>
         ) : (
-          <FaMoon size="20" className="text-blue-500" />
+          <Tooltip showArrow={true} content="Escuro">
+            <FaMoon size="20" className="text-blue-500" />
+          </Tooltip>
         )}
       </div>
     </Component>

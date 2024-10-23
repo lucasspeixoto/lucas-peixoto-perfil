@@ -10,6 +10,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
+import { Tooltip } from "@nextui-org/tooltip";
 import { FaYoutube, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { FaMedium } from "react-icons/fa";
 import { siteConfig } from "@/config/site";
@@ -55,21 +56,29 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-4">
           <Link isExternal href={siteConfig.links.youtube} aria-label="Youtube">
-            <FaYoutube size="30" className="text-red-500" />
+            <Tooltip showArrow={true} content="Meu canal">
+              <FaYoutube size="30" className="text-red-500" />
+            </Tooltip>
           </Link>
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <FaGithub size="30" className="text-gray-500" />
+            <Tooltip showArrow={true} content="Github">
+              <FaGithub size="30" className="text-gray-500" />
+            </Tooltip>
           </Link>
           <Link
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="Linkedin"
           >
-            <FaLinkedin size="30" className="text-blue-500" />
+            <Tooltip showArrow={true} content="Linkedin">
+              <FaLinkedin size="30" className="text-blue-500" />
+            </Tooltip>
           </Link>
 
           <Link isExternal href={siteConfig.links.medium} aria-label="Medium">
-            <FaMedium size="30" className="dark:text-white text-black" />
+            <Tooltip showArrow={true} content="Meus Artigos">
+              <FaMedium size="30" className="dark:text-white text-black" />
+            </Tooltip>
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -77,16 +86,24 @@ export const Navbar = () => {
 
       <NavbarContent className="gap-2 sm:hidden basis-1 pl-1" justify="end">
         <Link isExternal href={siteConfig.links.youtube} aria-label="Youtube">
-          <FaYoutube size="20" className="text-red-500" />
+          <Tooltip showArrow={true} content="Meu canal">
+            <FaYoutube size="20" className="text-red-500" />
+          </Tooltip>
         </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <FaGithub size="20" className="text-gray-500" />
+          <Tooltip showArrow={true} content="Github">
+            <FaGithub size="20" className="text-gray-500" />
+          </Tooltip>
         </Link>
         <Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-          <FaLinkedin size="20" className="text-blue-500" />
+          <Tooltip showArrow={true} content="Linkedin">
+            <FaLinkedin size="20" className="text-blue-500" />
+          </Tooltip>
         </Link>
         <Link isExternal href={siteConfig.links.medium} aria-label="Medium">
-          <FaMedium size="20" className="dark:text-white text-black" />
+          <Tooltip showArrow={true} content="Meus artigos">
+            <FaMedium size="20" className="dark:text-white text-black" />
+          </Tooltip>
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
@@ -97,13 +114,9 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
+                className={`leading-tight tracking-wider select-none gap-1 hover:underline ${
+                  pathname === item.href ? "underline text-primary" : "dark:text-white text-black"
+                }`}
                 href={item.href}
                 size="lg"
               >

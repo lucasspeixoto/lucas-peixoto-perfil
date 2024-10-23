@@ -13,11 +13,6 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({
@@ -28,32 +23,34 @@ export default function RootLayout({
   return (
     <html lang="pt" suppressHydrationWarning>
       <head />
-      <body
-        className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}
+      <Providers
+        themeProps={{ attribute: "class", defaultTheme: "dark", children }}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark", children }}>
+        <body
+          className={clsx(
+            "min-h-screen bg-background font-sans antialiased",
+            fontSans.variable
+          )}
+        >
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main className="container mx-auto max-w-5xl py-2 px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
+            <footer className="select-none w-full flex items-center justify-center py-3">
+              <span className="text-default-600 mr-1">Desenvolvido com</span>
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
                 href="https://nextjs.org/"
                 title="nextui.org homepage"
               >
-                <span className="text-default-600">Desenvolvido com</span>
-                <p className="text-primary">NextJs</p>
+                <p className="text-primary hover:underline">NextJs</p>
               </Link>
             </footer>
           </div>
-        </Providers>
-      </body>
+        </body>
+      </Providers>
     </html>
   );
 }

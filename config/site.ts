@@ -27,7 +27,7 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Apresentação",
+      label: "Sobre mim",
       href: "/",
     },
     {
