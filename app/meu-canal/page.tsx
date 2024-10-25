@@ -14,11 +14,19 @@ export default function MyChannelPage() {
       <div className="container mt-8">
         <div className="flex flex-col gap-4">
           <p className="text-base sm:text-xl md:text-xl leading-7">
-            O canal Descomplicando a prática é meu novo canal do youtube onde
-            pretendo trazer muito conteúdo educativo com tutoriais práticos
-            trazendo diversas situações que ocorrem no dia a dia do programador
-            e que não tem vasto conteúdo disponível. Sofri muito nos meus
-            primeiros anos quando precisei de conteúdos mais avançados.
+            O canal{" "}
+            <a
+              href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1"
+              target="_blank"
+              className="font-bold hover:underline"
+            >
+              Descomplicando a prática
+            </a>{" "}
+            é meu novo canal do youtube onde pretendo trazer muito conteúdo
+            educativo com tutoriais práticos trazendo diversas situações que
+            ocorrem no dia a dia do programador e que não tem vasto conteúdo
+            disponível. Sofri muito nos meus primeiros anos quando precisei de
+            conteúdos mais avançados.
           </p>
 
           <p className="text-base sm:text-xl md:text-xl leading-7">

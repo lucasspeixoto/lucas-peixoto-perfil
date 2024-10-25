@@ -26,14 +26,6 @@ export default function Error({
           Desculpa, algo deu errado!
         </p>
         <p className="mb-8">Tente acessar novamente</p>
-       {/*  <Link
-					isExternal
-					as={NextLink}
-					href="/"
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Voltar ao início
-				</Link> */}
       </div>
     </div>
   )

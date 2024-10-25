@@ -49,7 +49,7 @@ export default function Home() {
             </p>
             <p className="mb-4 text-lg">
              Além disso, estou conduzindo meu
-              <a className="text-red-500 font-semibold hover:underline" target="_blank" href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1" > canal</a> no youtube
+              <a className="text-red-500 font-semibold hover:underline ml-1" target="_blank" href="https://www.youtube.com/channel/UC6LY6Xw5ff_KaHwjHWRA9oA?sub_confirmation=1" >canal</a> no youtube
               e atuando como mentor de desenvolvedores em inicio de carreira.
             </p>
           </div>

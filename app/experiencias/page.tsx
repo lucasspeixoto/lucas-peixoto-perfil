@@ -9,7 +9,7 @@ const experiences = {
       key: "1",
       date: "Out 2024 - Presente",
       job: "Desenvolvedor de software Senior",
-      company: "Santander (First)",
+      company: "Santander (F1rst)",
       description:
         "Atuação como desenvolvedor fullstack, onde trabalho com Angular no desenvolvimento frontend utilizando o conceito de microfrontends e com Java/Spring boot no desenvolvimento de microserviços e API`s. Além das atividades como desenvolvedor, atuo no processo tomadas de decisão para resolver problemas e melhorar processos, seja tecnico ou não.",
     },
