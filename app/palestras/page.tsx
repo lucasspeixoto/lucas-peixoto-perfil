@@ -7,6 +7,12 @@ const presentationsData = [
     imgSrc: "/static/images/angular-4.png",
     href: "https://www.youtube.com/watch?v=Z9Ne4Imit28",
   },
+  {
+    title: "Server Side rendering (SSR) no Angular",
+    description: `Como o angular SSR e as novas features que surgiram na versão 17 temos a possibilidade de utilizar renderização via servidor para nos trazer inúmeros ganhos entre eles a performance ao exibir o conteúdo inicial de nossos aplicativos, melhor Search engine optimization (SEO) e melhor experiência de usuário. Nesta apresentação vamos entender a fundo como isso funciona por baixo dos panos e como podemos utilizar em nossos aplicativos angular.`,
+    imgSrc: "/static/images/angular-5.png",
+    href: "https://www.youtube.com/watch?v=gyfU9jcPeW8",
+  },
 ];
 
 export default function ArticlesPage() {
