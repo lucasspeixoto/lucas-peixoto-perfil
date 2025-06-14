@@ -13,6 +13,12 @@ const presentationsData = [
     imgSrc: "/static/images/angular-5.png",
     href: "https://www.youtube.com/watch?v=gyfU9jcPeW8",
   },
+  {
+    title: "Angular e Signals. Muito além do que prevíamos",
+    description: `Com o lançamento dos signals na versão 16 do Angular, talvez não tivéssemos noção da transformação que isso traria para o framework. Hoje, ja é possível enxergar com clareza que o futuro do angular Caminha fortemente para uma abordagem baseada em signals. Nesta palestra, vamos explorar as principais funcionalidades que utilizam signals e entender como essa ferramenta pode revolucionar a forma como gerenciamos e persistimos dados em nossos projetos com Angular.`,
+    imgSrc: "/static/images/angular-6.png",
+    href: "https://www.youtube.com/watch?v=wWNXwXOIYOM",
+  },
 ];
 
 export default function ArticlesPage() {
