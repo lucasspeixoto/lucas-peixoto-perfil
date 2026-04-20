@@ -19,7 +19,7 @@ export default function Home() {
               className="h-48 w-48 rounded-full"
             />
             <span className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
-              Lucas Sacramoni Peixoto Fernandes
+              Lucas Peixoto Fernandes
             </span>
             <span className="text-xl">
               Desenvolvedor fullstack
